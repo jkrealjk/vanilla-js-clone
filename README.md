@@ -1,3 +1,3 @@
 # Vanilla js clone
 
-vanilla practice
+vanilla
