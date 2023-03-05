@@ -1,4 +1,4 @@
-const clock = document.querySelector("#clock");
+const clock = document.querySelector("#clock span");
 const date = new Date();
 
 const handleClock = () => {
@@ -9,10 +9,10 @@ const handleClock = () => {
   const hour = String(date.getHours());
   const min = String(date.getMinutes());
   const sec = String(date.getSeconds());
-  clock.innerText = `${year} ${month} ${day} ${hour.padStart(
+  clock.innerText = `${year}. ${month}. ${day} / ${hour.padStart(
     2,
     0
-  )} ${min.padStart(2, 0)} ${sec.padStart(2, 0)}`;
+  )} : ${min.padStart(2, 0)} : ${sec.padStart(2, 0)}`;
 };
 handleClock();
 setInterval(handleClock, 1000);
